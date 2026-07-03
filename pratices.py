@@ -1,65 +1,94 @@
-#python basics
+#python operators
 '''
-1.comments
-2.data type
-3.variables
-4.assigment
-5.dynamic Typing
-6.mutable&immutable
-'''
-#data type
-name="vignesh"
-age=22
-CGPA=88.7
-print(type(name))
-print(type(age))
-print(type(CGPA))
-print("*"*(100))
-#product
-pn=input("enter the product name:")
-p=float(input("enter the price:"))
-q=int(input("enter the qunatity:"))
-c=p*q
-print("*"*(100))
-print("product name:",pn)
-print("product+qunatity",c)
-print(type(pn))
-print(type(p))
-print(type(q))
-print("*"*(100))
-#percentage
-names=input("student subject name :")
-mark=float(input("enter the mark: "))
-total_mark=("Percenntage",(name),mark*100)
-print(total_mark)
-print("*"*(100))
-#slaray print
-name1=input("enter the emplore name:")
-age=int(input("enter the age:"))
-salary=float(input("enter the salary:"))
-print("NAME:",name1,"\nAGE:",age,"\nSALARY:",salary)
-print(type(name1))
-print(type(age))
-print(type(salary))
-print("*"*(100))
-#car task
-carname=input("enter the car name:")
-model_year=int(input("enter the model year:"))
-mileage=float(input("enter the mileage"))
-print("CarName:",carname,"\nModelYear:",model_year,"\nMileage:",mileage)
-#swaping(ethula enoru moadel kuda eruku c nu enoru variiable craet pani panala )
-a=int(input("enter the a valu:"))
-b=int(input("enter the b valu:"))
-a,b=b,a
-print(a,b)
-#3(oru line la epudii multiple variables kudukalam nu pakalam:)
-name,age,city="vicky",22,"salem"
-print(name)
-print(age)
-print(city)
-#epa oru vale epudii ellam variable kudukalam nu pakalam
-a=b=c=100
-print(a)
-print(b)
-print(c)
+Arithemetic operators
+Assigment operators
+comparson operators
+logical opearators
+if
+else
+Btwise operators
+identifiver operators
+Membership operators'''
 
+
+#Arithemetic operators
+a=int(input("enter the number:"))
+b=int(input("enter the second number:"))
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+print(a//b)
+print(a%b)
+print(a**b)
+#variable ku valu assiendpanurathu than assigment operator
+a=b
+print(a)
+a-=b
+print(a)
+a+=b
+print(a)
+a*=b
+print(a)
+a/=b
+print(a)
+a//=b
+print(a)
+a%=b
+print(a)
+a**=b
+print(a)
+#comparson operator
+print(a==b)
+print(a!=b)
+print(a>b)
+print(a<b)
+print(a>=b)
+print(a<=b)
+#Bitwise operator
+c=6
+d=7
+print(c&d)
+print(c|d)
+print(c^d)
+print(c<<d)
+print(c>>d)
+#logical operators (ethula ya if else pathudalam)
+#and
+i_d=input("you have id card""(yes/no)")
+age=int(input("enter the age"))
+if age>=18 and i_d=="yes":
+    print("Allowed")
+else:
+    print("NOt allowed")
+#or
+a=int(input("enter you qualification:"))
+if a==12 or a=="diploma":
+    print("eligible")
+else:
+    print("not eligible")
+#and+or
+age=int(input("enter your age:"))
+licensee=input("you have car or bike(car/bike):")
+if age>=18 and licensee=="car" or licensee=="bike":
+    print("Allow")
+else:
+    print("not allowed")
+#and+not
+fees=input("you pay your frees(yes/no):")
+suspend=input("your susbend last week(yes/no):")
+if fees=="yes" and suspend!="yes":
+    print("aloweed")
+else:
+    print("not Aloowed")
+#identifiver operator:
+s=int(input("enter the mobile number:"))
+v=int(input("enter the mobile number:"))
+print(s is v)
+print(s is not v)
+print(id(s))
+print(id(v))
+#membership operator
+name=input("enter your name:")
+print("v" in name)
+print("h"not in name)
